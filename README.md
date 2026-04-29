@@ -22,3 +22,6 @@ Academic Progress Analytics: Real-time visualization of study hours and attendan
 Cozy Library Aesthetic: Depth-of-field background effects and warm ambient lighting simulations to reduce digital eye strain.
 
 Multi-Page Navigation: Separate logic for an entry portal (index.html) and the main workspace (dashboard.html).
+
+##view the live dashboard here
+https://aura-academic.netlify.app/
