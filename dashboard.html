@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar glass">
+            <div class="nav-links">
+                <div class="nav-item active"><i data-lucide="home"></i></div>
+                <div class="nav-item"><i data-lucide="check-circle"></i></div>
+                <div class="nav-item"><i data-lucide="calendar"></i></div>
+                <div class="nav-item"><i data-lucide="edit-3"></i></div>
+            </div>
+            <a href="index.html" class="nav-item logout"><i data-lucide="log-out"></i></a>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="glass profile-header">
+                <div class="user-info">
+                    <img src="https://i.pravatar.cc/150?u=anamika" alt="Avatar" class="avatar">
+                    <div>
+                        <h2>Hello, Anamika</h2>
+                        <span>Soft indigo mode active • 3 tasks remaining</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-grid">
+                <!-- Task Manager -->
+                <section class="widget glass tasks">
+                    <div class="widget-header"><i data-lucide="list"></i> <h3>Task Manager</h3></div>
+                    <div class="todo-item"><input type="checkbox" checked> <span>Organic Chemistry Lab</span></div>
+                    <div class="todo-item"><input type="checkbox"> <span>World History Essay</span></div>
+                    <div class="todo-item"><input type="checkbox"> <span>Vector Calculus Quiz</span></div>
+                </section>
+
+                <!-- Progress Chart -->
+                <section class="widget glass chart">
+                    <div class="widget-header"><i data-lucide="activity"></i> <h3>Study Hours</h3></div>
+                    <canvas id="studyChart"></canvas>
+                </section>
+
+                <!-- Attendance -->
+                <section class="widget glass attendance">
+                    <div class="widget-header"><i data-lucide="pie-chart"></i> <h3>Attendance</h3></div>
+                    <div class="circle-box">
+                        <div class="circular-progress" style="--val:85">
+                            <span class="val">85%</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
