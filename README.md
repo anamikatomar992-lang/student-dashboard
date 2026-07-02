@@ -1,4 +1,4 @@
-# student-dashboard
+# student-sanctuary
 📚 Study Sanctuary: A Glassmorphic Student Ecosystem
 Project Overview
 Study Sanctuary is a modern, high-fidelity student dashboard designed to balance aesthetic appeal with academic productivity. Moving away from cluttered, high-contrast interfaces, this project utilizes Glassmorphism and a Library-inspired color palette to create a "Study Sanctuary"—a calm, focused digital environment for learners.
